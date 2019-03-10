@@ -1,11 +1,13 @@
+# ISO8601形式で日付を取得する
 # 
-# https://www.iso.org/standard/40874.html
-# https://www.iso.org/standard/70907.html
-# https://www.iso.org/standard/70908.html
+# see also:
+#   https://www.iso.org/standard/40874.html
+#   https://www.iso.org/standard/70907.html
+#   https://www.iso.org/standard/70908.html
 
 function time::iso8601::now {
-    date -Iseconds
- 
-    # only for macOS ...
-    #date +%Y-%m-%dT%H:%M:%S%z
+
+    date +%Y-%m-%dT%H:%M:%S:%z
+    #date -Iseconds
+
 }
