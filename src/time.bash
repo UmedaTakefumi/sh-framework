@@ -11,3 +11,18 @@ function time::iso8601::now {
     #date -Iseconds
 
 }
+
+function time::iso8601::yesterday {
+    date '+%Y-%m-%d' --date 'yesterday'
+    #date -I --date 'yesterday'
+}
+
+function time::iso8601::today {
+    date '+%Y-%m-%d'
+    #date -I
+}
+
+function time::iso8601::tomorrow {
+    date '+%Y-%m-%d' --date 'tomorrow'
+    #date -I --date 'tomorrow'
+}
