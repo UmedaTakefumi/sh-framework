@@ -1,5 +1,10 @@
 #!/bin/bash
 
-. ../src/time.bash
+. ../src/datetime.bash
 
-time::iso8601::now
+datetime::iso8601
+datetime::iso8601::yesterday
+datetime::iso8601::today
+datetime::iso8601::tomorrow
+
+
